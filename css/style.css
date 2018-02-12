@@ -1,0 +1,385 @@
+/*
+    stlye.css
+
+    This is the page that will have all the CSS for our project site.
+    Be sure to follow the order of the rules in this this file.
+*/
+
+
+/* ========================================================= */
+/*  IMPORTS for fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/* ========================================================= */
+/*  Page Level Style Rules */
+
+body {
+	font: 300 14px/1.8 'Raleway', sans-serif;
+	color: #666;
+	overflow-x: hidden;
+}
+
+/* ---------------------------------------------- /*
+ * Colors
+    Celestial Blue - #3399cc
+    Electric Yellow, “pop color” - #ffff33 
+    Canary Yellow - #ffff99
+    Lavender Gray - #C6C6C6
+    Nickle = #707070
+    White - #FFFFFF
+/* ---------------------------------------------- */
+
+.bg-shows {
+    background-color: #FFFF99;
+    color: #333333;
+}
+
+.bg-eYellow {
+    background-color: #ffff33;
+    color: #3399cc;
+}
+
+.bg-music {
+    background-color: #35A0D6;
+    color: #FFFF99;
+}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font: 200 40px/1.2 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+/*	margin: 5px 0 5px;*/
+  
+/*	color: #222;*/
+}
+
+h1{
+	font-size: 45px
+}
+
+h2 {
+	font-size: 80px; /*used to be 30px*/
+/*	margin: 0 0 30px;*/
+	color: #FFFFFF;
+}
+
+h3 {
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+}
+
+h4 {
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: 17px !important;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 16px !important;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+
+.btn {
+	font-family: Raleway, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 8px 26px;
+	border: 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: inherit !important;
+}
+
+/* Button size */
+
+.btn-lg,
+.btn-group-lg > .btn {
+	padding: 10px 25px;
+	font-size: 13px;
+    background: rgba(17, 17, 17, 0.8);
+    color: #fff;
+}
+.btn-lg:hover,
+.btn-group-lg > .btn:hover{
+    background: rgba(17, 17, 17, 1.8);
+    color: #fff;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+	padding: 6px 25px;
+	font-size: 11px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+	padding: 5px 25px;
+	font-size: 10px;
+}
+
+.btn .icon-before {
+	margin-right: 6px;
+}
+
+.btn .icon-after {
+	margin-left: 6px;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.navbar-custom {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Raleway, sans-serif;
+	
+-webkit-box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
+box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
+}
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+	background: #28271F;
+	padding: 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+	font-size: 20px;
+	letter-spacing: 3px;
+/*	color: #222;*/
+    color: #FFFFFF;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active a {
+	background: none;
+	outline: 0;
+/*	color: #E7746F;*/
+    color: #cccccc;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+	font-weight: 700;
+	font-size: 22px;
+/*    font-family: Lobster, cursive;*/
+}
+
+.navbar-custom .dropdown-menu {
+	border: 0;
+	border-top: 2px solid #E7746F;
+	border-radius: 0;
+}
+
+.navbar-custom .dropdown-menu > li > a {
+	padding: 10px 20px;
+}
+
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+	background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+	background: #222;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#021a73' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.social i{
+	font-size:25px;
+}
+
+/* ---------------------------------------------- /*
+ * Title
+/* ---------------------------------------------- */
+
+.titleImg {
+    background: url(../images/home_img.jpg);
+	background-color: #222;
+	background-attachment:inherit;
+	background-repeat: no-repeat;
+/*	background-position: 50% 50%;*/
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	padding: 0;
+    min-height: 600px;
+}
+
+.header-img-rows{
+	height: 275px;
+}
+.header-img-rows-middle{
+	height: 50px;
+}
+
+/* ---------------------------------------------- /*
+ * adjust the height of the rows in the title area to accomidate the subtitle
+/* ---------------------------------------------- */
+@media only screen and (max-width: 750px) {
+	.header-img-rows{
+		height: 225px;
+	}
+	.header-img-rows-middle{
+		height: 150px;
+	}
+}
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- /*
+ * Title Icons
+/* ---------------------------------------------- */
+.icon-styles .title-icon{
+	padding:10px;
+	color: #FFF;
+	font-size: 60px;
+	cursor: pointer;
+	
+	transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+.fa-facebook-square{
+	color: #FFF;
+}
+.fa-facebook-square:hover{
+	color:#3B5998;
+}
+.fa-instagram:hover{
+	color:#dd3b3b;
+}
+.fa-twitter-square:hover{
+	color:#4099FF;;
+}
+.fa-envelope:hover{
+	color:#cccccc;
+}
+/* ---------------------------------------------- */
+.subtitle-style{
+	font-size:40px;
+	color:#FFF;
+	
+}
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* shadow for cards */
+.box-shadow
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow:before, .effect6:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+/* ========================================================= */
+
+.concert-cards{
+	margin:30px;
+	border: none;
+	background-color: #ffff4d;
+/*
+	-webkit-box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
+	-moz-box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
+	box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
+*/
+	width:50%;
+	
+}
+@media only screen and (max-width: 750px) {
+	.concert-cards{
+		width:100%;
+	}
+}
+
+.concert-cards h5, h6{
+	font-size: 15px;
+	
+}
+
+.section-height {
+    height: 800px;
+}
+
+.footer-glyphicon {
+    color: #FFFFFA;
+    font-size: 1em;
+    letter-spacing: 2em;
+}
+
+/* ========================================================= */
+/* dropdown on hover */
+
+li.dropdown:hover > .dropdown-menu {
+    margin-top: -1px;
+    display: block;
+}
+
+/* ========================================================= */
+/* sticky-footer */
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: px; /* Set the fixed height of the footer here */
+  line-height: px; /* Vertically center the text there */
+}
+
