@@ -15,7 +15,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 
 /* ========================================================= */
@@ -42,16 +42,31 @@ body {
     color: #333333;
 }
 
-.bg-eYellow {
-    background-color: #ffff33;
-    color: #3399cc;
+.bg-about {
+    background-color: #FFFF99;
+    color: #333333;
 }
 
 .bg-music {
     background-color: #35A0D6;
-    color: #FFFF99;
+    color: #333333;
 }
-
+.bg-members{
+	background-color: #35A0D6;
+	color: #333333;
+}
+.bg-contact{
+	background-color: #FFFF99;
+	color: #333333;
+}
+.bg-footer{
+    background-color: #28271F;
+	color: #FFFFFF;
+}
+.bg-embeds{
+    background-color: #0f5b82;
+    color: #333333;
+}
 /* ---------------------------------------------- /*
  * Typography
 /* ---------------------------------------------- */
@@ -66,23 +81,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-	font-size: 45px
+	font-size: 45px;
 }
 
 h2 {
-	font-size: 80px; /*used to be 30px*/
+	font-size: 5.9vw; /*used to be 30px*/
 /*	margin: 0 0 30px;*/
 	color: #FFFFFF;
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 25px;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
 }
 
 h4 {
-	font-size: 22px;
+	font-size: 19px;
 	letter-spacing: 1px;
 }
 
@@ -97,6 +112,17 @@ h6 {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+
+.subtitle-style{
+	font-size: 2.5vw;
+	color:#FFF;
+}
+
+.footer-text{
+	color:white;
+}
+
+
 
 /* ---------------------------------------------- /*
  * Custom button style
@@ -223,7 +249,7 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#021a73' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .social i{
 	font-size:25px;
@@ -247,102 +273,74 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
     min-height: 600px;
 }
 
-.header-img-rows{
-	height: 275px;
+.header-height-set{
+	height:600px;
 }
-.header-img-rows-middle{
-	height: 50px;
+.header-height-set ul{
+	list-style: none;
 }
 
 /* ---------------------------------------------- /*
- * adjust the height of the rows in the title area to accomidate the subtitle
-/* ---------------------------------------------- */
-@media only screen and (max-width: 750px) {
-	.header-img-rows{
-		height: 225px;
-	}
-	.header-img-rows-middle{
-		height: 150px;
-	}
-}
-/* ---------------------------------------------- */
 
 
 /* ---------------------------------------------- /*
- * Title Icons
+ * ICON STYLES
 /* ---------------------------------------------- */
-.icon-styles .title-icon{
+.icon-styles a{
 	padding:10px;
 	color: #FFF;
-	font-size: 60px;
+	font-size: 50px;
 	cursor: pointer;
-	
-	transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
 }
-.fa-facebook-square{
-	color: #FFF;
-}
-.fa-facebook-square:hover{
+/*FACEBOOK*/
+.icon-styles a:nth-child(1):hover{
 	color:#3B5998;
 }
-.fa-instagram:hover{
+/*INSTAGRAM*/
+.icon-styles a:nth-child(2):hover{
 	color:#dd3b3b;
 }
-.fa-twitter-square:hover{
-	color:#4099FF;;
+/*TWITTER*/
+.icon-styles a:nth-child(3):hover{
+	color:#4099FF;
 }
-.fa-envelope:hover{
+/*EMAIL*/
+.icon-styles a:nth-child(4):hover{
 	color:#cccccc;
 }
 /* ---------------------------------------------- */
-.subtitle-style{
-	font-size:40px;
-	color:#FFF;
-	
-}
-/* ========================================================= */
 
+/*
+.carousel-control-next, .carousel-control-prev{
+	display: none;
+}
+*/
+.carousel-control-prev{
+	display: inline-block;
+}
 
-/* ========================================================= */
-/* shadow for cards */
-.box-shadow
-{
-  	position:relative;       
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.box-shadow:before, .effect6:after
-{
-	content:"";
-    position:absolute; 
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
-}
 /* ========================================================= */
 
 .concert-cards{
 	margin:30px;
 	border: none;
 	background-color: #ffff4d;
-/*
-	-webkit-box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
-	-moz-box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
-	box-shadow: -1px 2px 79px -12px rgba(0,0,0,0.62);
-*/
 	width:50%;
 	
 }
+
+.about-cards{
+	margin:30px;
+	border: none;
+	background-color: #ffff4d;
+	height: 100%;
+	
+}
+
+.overlay{
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 750px) {
 	.concert-cards{
 		width:100%;
