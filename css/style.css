@@ -15,7 +15,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+
+/*BODY FONT*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/*HEADER FONT*/
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 
 /* ========================================================= */
@@ -38,22 +42,25 @@ body {
 /* ---------------------------------------------- */
 
 .bg-shows {
-    background-color: #FFFF99;
-    color: #333333;
+    background-color: #bdc3c7;
+    color: #dae7f1;
 }
 
 .bg-about {
-    background-color: #FFFF99;
-    color: #333333;
+    background-color: #bdc3c7;
+    color: #dae7f1;
 }
 
 .bg-music {
-    background-color: #35A0D6;
-    color: #333333;
+/*    background-color: #35A0D6;*/
+    color: #dae7f1;
+}
+.bg-music .font-size{
+	font-size: 40px;
 }
 .bg-members{
 	background-color: #35A0D6;
-	color: #333333;
+	color: #dae7f1;
 }
 .bg-contact{
 	background-color: #FFFF99;
@@ -67,11 +74,23 @@ body {
     background-color: #0f5b82;
     color: #333333;
 }
+
+.text-black{
+	color: #333333;
+}
+
+.concert-cards{
+	background-color: #3498db;
+}
+.about-cards{
+	background-color: #3498db;
+	height: 100%;
+}
 /* ---------------------------------------------- /*
  * Typography
 /* ---------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h5 {
 	font: 200 40px/1.2 'Roboto', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -79,9 +98,17 @@ h1, h2, h3, h4, h5, h6 {
   
 /*	color: #222;*/
 }
+h6{
+	font: 200 40px/1.2 'Roboto', sans-serif;
+	letter-spacing: 5px;
+}
+
+h1, h4{
+	font-family: 'Righteous', cursive;
+}
 
 h1{
-	font-size: 45px;
+	font-size: 60px;
 }
 
 h2 {
@@ -97,18 +124,18 @@ h3 {
 }
 
 h4 {
-	font-size: 19px;
+	font-size: 25px;
 	letter-spacing: 1px;
 }
 
 h5 {
-	font-size: 17px !important;
+	font-size: 30px !important;
 	letter-spacing: 1px;
 	font-weight: 400;
 }
 
 h6 {
-	font-size: 16px !important;
+	font-size: 20px !important;
 	letter-spacing: 1px;
 	font-weight: 400;
 }
@@ -183,6 +210,12 @@ h6 {
  * Navigation
 /* ---------------------------------------------- */
 
+/*
+.contact-nav-item{
+	font-size: 25px !important;
+}
+*/
+
 .navbar-custom {
 	border: 0;
 	border-radius: 0;
@@ -255,6 +288,27 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
 	font-size:25px;
 }
 
+.navbar-nav li a{
+	color: #FFF;
+	cursor: pointer;
+}
+/*FACEBOOK*/
+.navbar-nav .social:nth-child(1):hover a{
+	color:#3B5998;
+}
+/*INSTAGRAM*/
+.navbar-nav .social:nth-child(2):hover a{
+	color:#dd3b3b;
+}
+/*TWITTER*/
+.navbar-nav .social:nth-child(3):hover a{
+	color:#4099FF;
+}
+/*YOUTUBE*/
+.navbar-nav .social:nth-child(4):hover:hover a{
+	color:#ff0000;
+}
+
 /* ---------------------------------------------- /*
  * Title
 /* ---------------------------------------------- */
@@ -280,8 +334,62 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
 	list-style: none;
 }
 
-/* ---------------------------------------------- /*
 
+/* ---------------------------------------------- /*
+ * MUSIC
+/* ---------------------------------------------- */
+.musicImg {
+    background: url(../images/music_bg.jpg);
+	background-color: #222;
+	background-attachment:inherit;
+	background-repeat: no-repeat;
+/*	background-position: 50% 50%;*/
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	padding: 0;
+    min-height: 600px;
+}
+.bg-list-group a {
+    background-color: #35A0D6;
+    color: #dae7f1;
+	font-family:'Roboto', sans-serif;
+	font-size: 20px;
+	border: none;
+}
+.music-social-container .music-icon-item.fa-spotify{
+	color:#1db954;
+}
+.music-social-container .music-icon-item.fa-youtube{
+	color:#ff0000;
+}
+.music-social-container .music-icon-item.fa-itunes{
+	color: rgb(88,86,214);
+}
+.music-social-container .music-icon-item.fa-spotify:hover, .music-icon-item.fa-youtube:hover, .music-icon-item.fa-itunes:hover{
+    color:#dae7f1;
+    -webkit-transition: color 500ms;
+    transition: color 500ms;
+	transition-timing-function: ease-in-out;
+}
+
+/* ---------------------------------------------- /*
+ * MEMBERS
+/* ---------------------------------------------- */
+.membersImg {
+    background: url(../images/Ithacappella-2015-Block-III.jpg);
+	background-color: #222;
+	background-attachment:inherit;
+	background-repeat: no-repeat;
+/*	background-position: 50% 50%;*/
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	padding: 0;
+    min-height: 600px;
+}
 
 /* ---------------------------------------------- /*
  * ICON STYLES
@@ -304,9 +412,9 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
 .icon-styles a:nth-child(3):hover{
 	color:#4099FF;
 }
-/*EMAIL*/
+/*YOUTUBE*/
 .icon-styles a:nth-child(4):hover{
-	color:#cccccc;
+	color:#ff0000;
 }
 /* ---------------------------------------------- */
 
@@ -321,21 +429,7 @@ box-shadow: -2px 14px 23px -14px rgba(0,0,0,0.62);
 
 /* ========================================================= */
 
-.concert-cards{
-	margin:30px;
-	border: none;
-	background-color: #ffff4d;
-	width:50%;
-	
-}
 
-.about-cards{
-	margin:30px;
-	border: none;
-	background-color: #ffff4d;
-	height: 100%;
-	
-}
 
 .overlay{
 	cursor: pointer;
